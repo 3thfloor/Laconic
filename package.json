@@ -1,0 +1,35 @@
+{
+  "name": "@3thfloor/engine",
+  "version": "0.1.0",
+  "description": "Local AI inference SDK. npm install, load, chat.",
+  "author": "Justin Bench <justin.bench@gmail.com>",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "homepage": "https://3thfloor.com",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.cjs.json && node -e \"require('fs').writeFileSync('dist/cjs/package.json',JSON.stringify({type:'commonjs'}))\"",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "node-llama-cpp": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": { "node": ">=18.0.0" },
+  "keywords": ["llm", "ai", "inference", "local", "gguf", "llama", "embedding"],
+  "repository": { "type": "git", "url": "https://github.com/3thfloor/engine" }
+}
