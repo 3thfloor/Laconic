@@ -31,5 +31,5 @@
   },
   "engines": { "node": ">=18.0.0" },
   "keywords": ["llm", "ai", "inference", "local", "gguf", "llama", "embedding"],
-  "repository": { "type": "git", "url": "https://github.com/3thfloor/engine" }
+  "repository": { "type": "git", "url": "https://github.com/3thfloor/laconic" }
 }
