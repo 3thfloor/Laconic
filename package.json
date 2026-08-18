@@ -1,6 +1,6 @@
 {
   "name": "@3thfloor/engine",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Local AI inference SDK. npm install, load, chat.",
   "author": "Justin Bench <justin.bench@gmail.com>",
   "license": "PolyForm-Noncommercial-1.0.0",
